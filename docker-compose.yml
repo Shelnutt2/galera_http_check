@@ -1,5 +1,5 @@
 galera_http_check:
-  build: .
+  image: shelnutt2/galera_http_check
   environment:
     - MYSQL_USERNAME=user
     - MYSQL_PASSWORD=password
