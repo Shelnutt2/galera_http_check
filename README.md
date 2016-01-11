@@ -5,7 +5,7 @@ This is a small script to provide the status of a galera cluster over http.
 With a (mysql) galera node if it is in a donor or joiner state, the port will
 be up but the server is not accepting queries.
 
-This provides an http endpoint (/checkGaleraStatus) which will return 500
+This provides an http endpoint (/check-galera-status) which will return 500
 if the server is down or galera is in a non-serving state. It will return
 200 otherwise.
 
