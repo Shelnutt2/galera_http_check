@@ -1,0 +1,9 @@
+galera_http_check:
+  build: .
+  environment:
+    - MYSQL_USERNAME=user
+    - MYSQL_PASSWORD=password
+    - HTTP_PORT=80
+    - GALERA_HOST=localhost
+  ports:
+    - 80:80
