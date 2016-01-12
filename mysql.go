@@ -22,7 +22,7 @@ func checkGaleraStatus(w http.ResponseWriter, r *http.Request) {
 	var value int
 	var variableName string
 	err = db.QueryRow(checkQuery).Scan(&variableName, &value)
-
+	db.Close()
 	if err != nil {
 		w.WriteHeader(http.StatusInternalServerError)
 		fmt.Fprintf(w, "Error checking galera host (%s) status\n%s", *galeraHost, err.Error()) // send data to client side
