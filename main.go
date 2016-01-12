@@ -24,8 +24,8 @@ func init() {
 	goopt.Description = func() string {
 		return "Galera http Check"
 	}
-	goopt.Version = "0.9.1"
-	goopt.Summary = "main [-H] [-p]"
+	goopt.Version = "0.9.2"
+	goopt.Summary = "galera_http_check [-H] [-p]"
 
 }
 
